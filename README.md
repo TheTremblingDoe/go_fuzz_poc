@@ -8,4 +8,5 @@ clang -fsanitize=fuzzer parse-complex.a -o parse-complex.libfuzzer\
 Coverage calculation:\
 export FUZZ_CORPUS_DIR=/path_to_dir/seed_corpus/\
 go test -coverprofile fuzz.cov -run TestFuzzCorpus\
-go tool cover -html=fuzz.cov -o covreport.html
+go tool cover -html=fuzz.cov -o covreport.html\
+UPD (08.12.2023) now it can be runned just with bash script
